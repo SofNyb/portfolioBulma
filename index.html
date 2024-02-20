@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Sofies portfolio - Bulma</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/SofieFavicon2.png">
     <script src="https://kit.fontawesome.com/bc87d7ac19.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -128,39 +129,95 @@
 <!-- kompetencer -->
 
 <section class="section">
-    <div class="container">
-        <div class="accordion">
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <p>Accordion Item 1</p>
-                    <button class="button" aria-expanded="false">
-            <span class="icon">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-                    </button>
-                </div>
-                <div class="accordion-content">
-                    <!-- Content for Accordion Item 1 -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-                </div>
-            </div>
 
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <p>Accordion Item 2</p>
-                    <button class="button" aria-expanded="false">
-            <span class="icon">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-                    </button>
-                </div>
-                <div class="accordion-content">
-                    <!-- Content for Accordion Item 2 -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+    <div class="container">
+        <p class="title">
+            Kompetencer
+        </p>
+
+        <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+                    <span>Programmering</span>
+                    <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu1" role="menu">
+                <div class="dropdown-content">
+                    <div class="dropdown-item">
+                        HTML 5
+                    </div>
+                    <div class="dropdown-item">
+                        React
+                    </div>
+                    <div  class="dropdown-item">
+                        Ionic 5+
+                    </div>
+                    <div class="dropdown-item">
+                        Angular 2+
+                    </div>
+                    <div class="dropdown-item">
+                        PHP
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                    <span>CSS Frameworks</span>
+                    <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                <div class="dropdown-content">
+                    <div class="dropdown-item">
+                        CSS 3
+                    </div>
+                    <div class="dropdown-item">
+                        Sass
+                    </div>
+                    <div class="dropdown-item">
+                        Bootstrap
+                    </div>
+                    <div class="dropdown-item">
+                        Tailwind
+                    </div>
+                    <div class="dropdown-item">
+                        Bulma
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                    <span>Ekstra</span>
+                    <span class="icon is-small">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+          </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                <div class="dropdown-content">
+                    <div class="dropdown-item">
+                        SQL
+                    </div>
+                    <div class="dropdown-item">
+                        WebXR
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </section>
 
 <!-- kontakt mig -->
@@ -213,6 +270,11 @@
         });
 
     });
+</script>
+
+<!-- scrip til at få accordion til at virke -->
+<script type="text/javascript" src="/node_modules/bulma-accordion/dist/js/bulma-accordion.min.js">
+    var accordions = bulmaAccordion.attach(); // accordions now contains an array of all Accordion instances
 </script>
 
 </body>
