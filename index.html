@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sofies portfolio - Bulma</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/png" href="images/SofieFavicon2.png">
     <script src="https://kit.fontawesome.com/bc87d7ac19.js" crossorigin="anonymous"></script>
 </head>
@@ -225,31 +226,78 @@
 </section>
 
 <!-- kontakt mig -->
+<section class="section">
+    <div class="box columns">
 
-<form class="box">
-    <div class="field">
-        <label class="label">Navn</label>
-        <div class="control">
-            <input class="input" type="text" placeholder="Navn">
-        </div>
+        <p class="title column">
+            Kontakt mig
+        </p>
+
+        <form class=" column">
+            <div class="field">
+                <label class="label">Navn</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Navn">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" type="email" placeholder="Indtast din mail">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Tekst</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Skriv din besked her">
+                </div>
+            </div>
+
+            <button class="button is-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- bundmenu -->
+<nav class="navbar is-fixed-bottom" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item navbar-start" href="#">
+            <img src="images/SofieFavicon.png">
+            <p>Sofie Nybro</p>
+
+        </a>
+
+        <!--<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>-->
     </div>
 
-    <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-            <input class="input" type="email" placeholder="Indtast din mail">
+    <div id="navbarBasicExample" class="navbar-menu">
+
+        <div class="navbar-end">
+            <a class="navbar-item">
+                <i class="fa-brands fa-github"></i>
+                <p>Github</p>
+            </a>
+
+            <a class="navbar-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <p>LinkedIn</p>
+            </a>
+
+            <div class="navbar-item">
+                <a class="navbar-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Kontakt mig</p>
+                </a>
+            </div>
         </div>
     </div>
-
-    <div class="field">
-        <label class="label">Tekst</label>
-        <div class="control">
-            <input class="input" type="text" placeholder="Skriv din besked her">
-        </div>
-    </div>
-
-    <button class="button is-primary">Submit</button>
-</form>
+</nav>
 
 <!-- script til at få menu til at virke -->
 <script>
