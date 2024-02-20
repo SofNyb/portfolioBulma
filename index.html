@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/bc87d7ac19.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -27,15 +28,18 @@
 
         <div class="navbar-end">
             <a class="navbar-item">
+                <i class="fa-brands fa-github"></i>
                 <p>Github</p>
             </a>
 
             <a class="navbar-item">
+                <i class="fa-brands fa-linkedin"></i>
                 <p>LinkedIn</p>
             </a>
 
             <div class="navbar-item">
                 <a class="navbar-link">
+                    <i class="fa-solid fa-envelope"></i>
                     <p>Kontakt mig</p>
                 </a>
             </div>
@@ -46,9 +50,9 @@
 <!-- info -->
 <section class="section">
     <div class="container">
-        <div class="card columns">
+        <div class="card columns is-vcentered">
 
-            <div class="card-content column">
+            <div class="card-content column has-text-centered-tablet">
                 <div class="content">
                     <div class="media-content">
                         <p class="title is-4">Hej!</p>
@@ -58,8 +62,8 @@
                 </div>
             </div>
 
-            <div class="card-image column">
-                <figure class="image is-3by4">
+            <div class="card-image column is-3">
+                <figure class="image is-64x128 is-96x96-tablet is-64x64-mobile">
                     <img src="images/SofieNybro.jpg" alt="Sofie Nybro">
                 </figure>
             </div>
@@ -69,58 +73,95 @@
 </section>
 
 <!-- projekter -->
-<div class="container">
+<section class="section">
+    <div class="container">
 
-    <div class="columns">
+        <div class="columns">
 
-        <div class="card column">
-            <div class="card-image">
-                <figure class="image is-2by1">
-                    <img src="images/buddys.svg" alt="Buddys">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="content">
-                    <div class="media-content">
-                        <p class="title is-4">Hej!</p>
-                        <p class="subtitle is-6">Lidt tekst nedenunder</p>
-                        <a class="is-link">Kontakt mig</a>
+            <div class="card column ml-5 mr-2">
+                <div class="card-image">
+                    <figure class="image is-2by1">
+                        <img src="images/buddys.svg" alt="Buddys">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="media-content">
+                            <p class="title is-4">Hej!</p>
+                            <p class="subtitle is-6">Lidt tekst nedenunder</p>
+                            <a class="is-link">Kontakt mig</a>
+                        </div>
                     </div>
                 </div>
+                <footer class="card-footer">
+                    <a href="#" class="card-footer-item">Buddys</a>
+                    <a href="#" class="card-footer-item">Github</a>
+                </footer>
             </div>
-            <footer class="card-footer">
-                <a href="#" class="card-footer-item">Buddys</a>
-                <a href="#" class="card-footer-item">Github</a>
-            </footer>
-        </div>
 
-        <div class="card column">
-            <div class="card-image">
-                <figure class="image is-2by1">
-                    <img src="images/Skema.png" alt="Powerskema">
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="content">
-                    <div class="media-content">
-                        <p class="title is-4">Hej!</p>
-                        <p class="subtitle is-6">Lidt tekst nedenunder</p>
-                        <a class="is-link">Kontakt mig</a>
+            <div class="card column mr-5 ml-2">
+                <div class="card-image">
+                    <figure class="image is-2by1">
+                        <img src="images/Skema.png" alt="Powerskema">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <div class="media-content">
+                            <p class="title is-4">Hej!</p>
+                            <p class="subtitle is-6">Lidt tekst nedenunder</p>
+                            <a class="is-link">Kontakt mig</a>
+                        </div>
                     </div>
                 </div>
+                <footer class="card-footer">
+                    <a href="#" class="card-footer-item">Buddys</a>
+                    <a href="#" class="card-footer-item">Github</a>
+                </footer>
             </div>
-            <footer class="card-footer">
-                <a href="#" class="card-footer-item">Buddys</a>
-                <a href="#" class="card-footer-item">Github</a>
-            </footer>
+
         </div>
 
     </div>
-
-</div>
+</section>
 
 <!-- kompetencer -->
 
+<section class="section">
+    <div class="container">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <p>Accordion Item 1</p>
+                    <button class="button" aria-expanded="false">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <!-- Content for Accordion Item 1 -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <p>Accordion Item 2</p>
+                    <button class="button" aria-expanded="false">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+                    </button>
+                </div>
+                <div class="accordion-content">
+                    <!-- Content for Accordion Item 2 -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- kontakt mig -->
 
