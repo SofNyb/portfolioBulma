@@ -10,9 +10,10 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
+        <a class="navbar-item navbar-start" href="#">
             <img src="images/SofieFavicon.png">
             <p>Sofie Nybro</p>
+
         </a>
 
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -23,36 +24,150 @@
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-            <a class="navbar-item">
-                Home
-            </a>
-
-            <a class="navbar-item">
-                Documentation
-            </a>
-
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                    More
-                </a>
-            </div>
-        </div>
 
         <div class="navbar-end">
+            <a class="navbar-item">
+                <p>Github</p>
+            </a>
+
+            <a class="navbar-item">
+                <p>LinkedIn</p>
+            </a>
+
             <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
-                    </a>
-                </div>
+                <a class="navbar-link">
+                    <p>Kontakt mig</p>
+                </a>
             </div>
         </div>
     </div>
 </nav>
+
+<!-- info -->
+<div class="container">
+    <div class="card">
+        <div class="card-image">
+            <figure class="image is-3by4">
+                <img src="images/SofieNybro.jpg" alt="Sofie Nybro">
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="content">
+                <div class="media-content">
+                    <p class="title is-4">Hej!</p>
+                    <p class="subtitle is-6">Lidt tekst nedenunder</p>
+                    <a class="is-link">Kontakt mig</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- projekter -->
+<div class="container">
+
+    <div class="columns is-multiline">
+
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-2by1">
+                    <img src="images/buddys.svg" alt="Buddys">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <div class="media-content">
+                        <p class="title is-4">Hej!</p>
+                        <p class="subtitle is-6">Lidt tekst nedenunder</p>
+                        <a class="is-link">Kontakt mig</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">Buddys</a>
+                <a href="#" class="card-footer-item">Github</a>
+            </footer>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-2by1">
+                    <img src="images/Skema.png" alt="Powerskema">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="content">
+                    <div class="media-content">
+                        <p class="title is-4">Hej!</p>
+                        <p class="subtitle is-6">Lidt tekst nedenunder</p>
+                        <a class="is-link">Kontakt mig</a>
+                    </div>
+                </div>
+            </div>
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">Buddys</a>
+                <a href="#" class="card-footer-item">Github</a>
+            </footer>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- kompetencer -->
+
+
+<!-- kontakt mig -->
+
+<form class="box">
+    <div class="field">
+        <label class="label">Navn</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Navn">
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+            <input class="input" type="email" placeholder="Indtast din mail">
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Tekst</label>
+        <div class="control">
+            <input class="input" type="text" placeholder="Skriv din besked her">
+        </div>
+    </div>
+
+    <button class="button is-primary">Submit</button>
+</form>
+
+<!-- script til at få menu til at virke -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
+</script>
 
 </body>
 </html>
