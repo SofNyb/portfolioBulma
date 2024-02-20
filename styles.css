@@ -17,7 +17,6 @@ body {
 .footer {
     background-color: #1E5927;
     height: 10vh;
-    color: white;
 }
 
 .submitKnap {
@@ -29,6 +28,10 @@ body {
     color: #308C47;
 }
 
-i.fa-solid, i.fa-brands {
+.headerIcon {
     color: black;
+}
+
+.footerIcon {
+    color: white;
 }
